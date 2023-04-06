@@ -6,7 +6,7 @@ body{
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
-#header{
+#header-section{
     position: fixed;
     top: 0;
     left: 0;
@@ -19,6 +19,7 @@ body{
     font-size: 25px;
     text-align: center;
     align-items: center;
+    box-shadow: 0px 5px 100px rgb(167, 167, 167);
 }
 #left-top-header{
     font-family: 'Times New Roman', Times, serif;
@@ -54,9 +55,7 @@ body{
     display: flex;
     padding: auto;
     list-style-type: none;
-    /* margin: 0; */
 }
-
 #header-link a{
     color: black;
     padding: 10px 20px;
@@ -80,7 +79,86 @@ body{
 #login-button a:hover{
     background-color: gray;
 }
-
 #welcome-section{
-    height: 150vh;
+    background-color: white;
+    height: 60vh;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+#welcome-lable{
+    margin-right: 100px;
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+#welcome-lable h1{
+    font-size: 50px;
+}
+#welcome-lable ul{
+    list-style-type: none;
+    padding: 0;
+}
+#welcome-lable li{
+    font-size: 20px;
+    margin: 10px 0 10px 0;
+}
+#welcome-section img{
+    width: 48vh;
+    height: 48vh;
+    margin-left: 100px;
+}
+#course-section{
+    background-color: aqua;
+    height: 100vh;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 150px 0;
+}
+#news-section{
+    background-color: aquamarine;
+    height: 100vh;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 150px 0;
+}
+#teacher-section{
+    background-color: blueviolet;
+    height: 100vh;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 150px 0;
+}
+#reference-section{
+    background-color: bisque;
+    height: 100vh;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 150px 0;
+}
+#contact-section{
+    background-color: yellow;
+    height: 100vh;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 150px 0;
 }
