@@ -114,12 +114,11 @@ body{
 }
 #course-section{
     background-color: white;
-    height: 100vh;
     justify-content: center;
     text-align: center;
     display: flex;
     flex-direction: column;
-    margin: 0;
+    margin: 5vh 0;
     padding: 0 30vh 10vh 30vh;;
 }
 #course-section h1{
@@ -158,12 +157,11 @@ body{
 }
 #news-section{
     background-color: white;
-    height: 100vh;
     justify-content: center;
     text-align: center;
     display: flex;
     flex-direction: column;
-    margin: 0;
+    margin: 5vh 0;
     padding: 0 30vh 10vh 30vh;;
 }
 #news-section h1{
@@ -183,12 +181,27 @@ body{
 #news-section a{
     text-decoration: none;
 }
+#news-section a h1{
+    font-size: 20px;
+    text-align: left;
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
 #news-section a p{
     text-align: left;
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+
 }
 .news-tile-image{
+    height: 228px;
     width: 100%;
     flex-grow: 1;
+    border-radius: 10px;
 }
 #news-link {
     margin: 5vh auto;
@@ -202,12 +215,11 @@ body{
 }
 #teacher-section{
     background-color: white;
-    height: 100vh;
     justify-content: center;
     text-align: center;
     display: flex;
     flex-direction: column;
-    margin: 0;
+    margin: 5vh 0;
     padding: 0 30vh 10vh 30vh;;
 }
 #teacher-section h1{
@@ -246,12 +258,11 @@ body{
 }
 #reference-section{
     background-color: white;
-    height: 100vh;
     justify-content: center;
     text-align: center;
     display: flex;
     flex-direction: column;
-    margin: 0;
+    margin: 5vh 0;
     padding: 0 30vh 10vh 30vh;;
 }
 #reference-section h1{
