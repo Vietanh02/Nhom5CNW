@@ -1,0 +1,125 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    /* background-color: black; */
+}
+#header-section{
+    position: fixed;
+    top: 0;
+    left: 0;
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: rgb(175, 172, 172);
+    width: 100%;
+    font-size: 25px;
+    text-align: center;
+    align-items: center;
+    box-shadow: 0px 5px 100px rgb(167, 167, 167);
+}
+#left-top-header{
+    font-family: 'Times New Roman', Times, serif;
+    float: right;
+    color: black;
+    display: flex;
+    margin-left: 70px;
+    align-items: center;
+}
+#logo-header{
+    /* padding-top: 20px; */
+    padding-right: 20px;
+    width: auto;
+    height: 85px;
+    object-fit: contain;
+}
+#search-text{
+    /* margin: 30px; */
+    height: 25px;
+    width: 200px;
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: 5px 30px 5px 10px;
+}
+#search-button{
+    position: relative;
+    top: 5px;
+    left: 240px;
+    width: 20px;
+    height: 20px;
+}
+#header-link{
+    display: flex;
+    padding: auto;
+    list-style-type: none;
+}
+#header-link a{
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 40px;
+    font-size: 20px;
+}
+#header-link a:hover{
+    background-color: grey;
+}
+#login-button{
+    margin-right: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+#login-button a{
+    padding: 10px 20px;
+    text-decoration: none;
+    color: black;
+    border-radius: 40px;
+}
+#login-button a:hover{
+    background-color: gray;
+}
+
+#information-news{
+    max-width: 1000px;
+    margin: 20vh auto 10vh 30vh;
+}
+#information-news h1{
+    font-size: 50px;
+}
+
+#information-news p{
+    font-size: 20px;
+}
+#information-news strong{
+    font-size: 30px;
+}
+#information-news span{
+    font-style: italic;
+    font-size: 15px;
+}
+#information-news em{
+    font-size: 15px;
+    text-align: right;
+}
+.information-image{
+    border-radius: 5px;
+}
+#date{
+    margin: 20px;
+    color:blue;
+}
+#contact-section{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: yellow;
+    height: 10vh;
+    justify-content: center;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 150px 200px;
+}
