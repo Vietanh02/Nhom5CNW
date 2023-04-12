@@ -1,27 +1,43 @@
-html{
+html {
+    scroll-padding-top: 1000px;
     scroll-behavior: smooth;
 }
-body{
+
+body {
+    position: relative;
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
+    scroll-padding-top: 1000px;
 }
-#header-section{
+
+#header-section {
+    /*Opacity start*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter: alpha(opacity=80);
+    -moz-opacity: 0.80;
+    -khtml-opacity: 0.8;
+    opacity: 0.8;
+    /*Opacity end*/
+    margin-top: -8px;
     position: fixed;
+    justify-content: flex-end;
     top: 0;
     left: 0;
     flex-direction: row;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    background-color: rgb(175, 172, 172);
+    background-color: rgba(161, 151, 151, 0.671);
     width: 100%;
     font-size: 25px;
     text-align: center;
     align-items: center;
     box-shadow: 0px 5px 100px rgb(167, 167, 167);
+    height: auto;
 }
-#left-top-header{
+
+#left-top-header {
     font-family: 'Times New Roman', Times, serif;
     float: right;
     color: black;
@@ -29,14 +45,16 @@ body{
     margin-left: 70px;
     align-items: center;
 }
-#logo-header{
-    /* padding-top: 20px; */
-    padding-right: 20px;
+
+#logo-header {
+    padding-top: 10px;
+    padding-right: 10px;
     width: auto;
     height: 85px;
     object-fit: contain;
 }
-#search-text{
+
+#search-text {
     /* margin: 30px; */
     height: 25px;
     width: 200px;
@@ -44,107 +62,136 @@ body{
     border: 1px solid black;
     padding: 5px 30px 5px 10px;
 }
-#search-button{
+
+#search-button {
     position: relative;
     top: 5px;
     left: 240px;
     width: 20px;
     height: 20px;
 }
-#header-link{
+
+#header-link {
     display: flex;
     padding: auto;
     list-style-type: none;
 }
-#header-link a{
+
+#header-link a {
     color: black;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 40px;
     font-size: 20px;
 }
-#header-link a:hover{
+
+#header-link a {
     background-color: grey;
 }
-#login-button{
+
+#login-button {
     margin-right: 50px;
     font-size: 20px;
 }
-#login-button a{
+
+#login-button a {
     padding: 10px 20px;
     text-decoration: none;
     color: black;
     border-radius: 40px;
 }
-#login-button a:hover{
+
+#login-button a:hover {
     background-color: gray;
 }
-#welcome-section{
-    background-color: white;
-    height: 60vh;
-    justify-content: center;
+
+#welcome-section {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    margin: 0;
-    padding: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: aliceblue;
+    background-image: url('../image/Welcome-image.jpg');
+    background-blend-mode: multiply;
+    background-position: center;
+    /* Center the image */
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+    background-size: cover;
+    /* Resize the background image to cover the entire container */
 }
-#welcome-lable{
+
+#welcome-lable {
     margin-right: 100px;
     margin-left: 40px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
 }
-#welcome-lable h1{
+
+#welcome-lable h1 {
     font-size: 50px;
 }
-#welcome-lable ul{
+
+#welcome-lable ul {
     list-style-type: none;
     padding: 0;
 }
-#welcome-lable li{
+
+#welcome-lable li {
     font-size: 20px;
     margin: 10px 0 10px 0;
 }
-#welcome-section img{
+
+#welcome-section img {
     width: 48vh;
     height: 48vh;
     margin-left: 100px;
 }
-#course-section{
+
+#course-section {
     background-color: white;
     justify-content: center;
     text-align: center;
     display: flex;
     flex-direction: column;
     margin: 5vh 0;
-    padding: 0 30vh 10vh 30vh;;
+    padding: 0 30vh 10vh 30vh;
+    ;
 }
-#course-section h1{
+
+#course-section h1 {
     color: black;
     font-size: 50px;
 }
-#course-section p{
+
+#course-section p {
     font-size: 20px;
 }
-#course-section div{
+
+#course-section div {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     grid-gap: 3rem;
     width: 100%;
-    margin: 40px auto;   
+    margin: 40px auto;
 }
-#course-section a{
+
+#course-section a {
     text-decoration: none;
 }
-#course-section a p{
+
+#course-section a p {
     text-align: left;
 }
-.course-tile-image{
+
+.course-tile-image {
     width: 100%;
     flex-grow: 1;
 }
+
 #course-link {
     margin: 5vh auto;
     background-color: blue;
@@ -155,33 +202,40 @@ body{
     padding: 10px;
     border-radius: 10px;
 }
-#news-section{
+
+#news-section {
     background-color: white;
     justify-content: center;
     text-align: center;
     display: flex;
     flex-direction: column;
     margin: 5vh 0;
-    padding: 0 30vh 10vh 30vh;;
+    padding: 0 30vh 10vh 30vh;
+    ;
 }
-#news-section h1{
+
+#news-section h1 {
     color: black;
     font-size: 50px;
 }
-#news-section p{
+
+#news-section p {
     font-size: 20px;
 }
-#news-section div{
+
+#news-section div {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     grid-gap: 3rem;
     width: 100%;
-    margin: 40px auto;   
+    margin: 40px auto;
 }
-#news-section a{
+
+#news-section a {
     text-decoration: none;
 }
-#news-section a h1{
+
+#news-section a h1 {
     font-size: 20px;
     text-align: left;
     display: -webkit-box;
@@ -189,7 +243,8 @@ body{
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
 }
-#news-section a p{
+
+#news-section a p {
     text-align: left;
     display: -webkit-box;
     overflow: hidden;
@@ -197,12 +252,14 @@ body{
     -webkit-box-orient: vertical;
 
 }
-.news-tile-image{
+
+.news-tile-image {
     height: 228px;
     width: 100%;
     flex-grow: 1;
     border-radius: 10px;
 }
+
 #news-link {
     margin: 5vh auto;
     background-color: blue;
@@ -213,39 +270,48 @@ body{
     padding: 10px;
     border-radius: 10px;
 }
-#teacher-section{
+
+#teacher-section {
     background-color: white;
     justify-content: center;
     text-align: center;
     display: flex;
     flex-direction: column;
     margin: 5vh 0;
-    padding: 0 30vh 10vh 30vh;;
+    padding: 0 30vh 10vh 30vh;
+    ;
 }
-#teacher-section h1{
+
+#teacher-section h1 {
     color: black;
     font-size: 50px;
 }
-#teacher-section p{
+
+#teacher-section p {
     font-size: 20px;
 }
-#teacher-section div{
+
+#teacher-section div {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     grid-gap: 3rem;
     width: 100%;
-    margin: 40px auto;   
+    margin: 40px auto;
 }
-#teacher-section a{
+
+#teacher-section a {
     text-decoration: none;
 }
-#teacher-section a p{
+
+#teacher-section a p {
     text-align: left;
 }
-.teacher-tile-image{
+
+.teacher-tile-image {
     width: 100%;
     flex-grow: 1;
 }
+
 #teacher-link {
     margin: 5vh auto;
     background-color: blue;
@@ -256,39 +322,48 @@ body{
     padding: 10px;
     border-radius: 10px;
 }
-#reference-section{
+
+#reference-section {
     background-color: white;
     justify-content: center;
     text-align: center;
     display: flex;
     flex-direction: column;
     margin: 5vh 0;
-    padding: 0 30vh 10vh 30vh;;
+    padding: 0 30vh 10vh 30vh;
+    ;
 }
-#reference-section h1{
+
+#reference-section h1 {
     color: black;
     font-size: 50px;
 }
-#reference-section p{
+
+#reference-section p {
     font-size: 20px;
 }
-#reference-section div{
+
+#reference-section div {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     grid-gap: 3rem;
     width: 100%;
-    margin: 40px auto;   
+    margin: 40px auto;
 }
-#reference-section a{
+
+#reference-section a {
     text-decoration: none;
 }
-#reference-section a p{
+
+#reference-section a p {
     text-align: left;
 }
-.reference-tile-image{
+
+.reference-tile-image {
     width: 100%;
     flex-grow: 1;
 }
+
 #reference-link {
     margin: 5vh auto;
     background-color: blue;
@@ -299,7 +374,8 @@ body{
     padding: 10px;
     border-radius: 10px;
 }
-#contact-section{
+
+#contact-section {
     background-color: yellow;
     height: 10vh;
     justify-content: center;
