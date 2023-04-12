@@ -1,25 +1,14 @@
 html {
-    scroll-padding-top: 1000px;
     scroll-behavior: smooth;
 }
 
 body {
-    position: relative;
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
-    scroll-padding-top: 1000px;
 }
 
 #header-section {
-    /*Opacity start*/
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
-    filter: alpha(opacity=80);
-    -moz-opacity: 0.80;
-    -khtml-opacity: 0.8;
-    opacity: 0.8;
-    /*Opacity end*/
-    margin-top: -8px;
     position: fixed;
     justify-content: flex-end;
     top: 0;
@@ -28,13 +17,12 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    background-color: rgba(161, 151, 151, 0.671);
+    background-color: rgb(175, 172, 172);
     width: 100%;
     font-size: 25px;
     text-align: center;
     align-items: center;
     box-shadow: 0px 5px 100px rgb(167, 167, 167);
-    height: auto;
 }
 
 #left-top-header {
@@ -47,8 +35,8 @@ body {
 }
 
 #logo-header {
-    padding-top: 10px;
-    padding-right: 10px;
+    /* padding-top: 20px; */
+    padding-right: 20px;
     width: auto;
     height: 85px;
     object-fit: contain;
@@ -85,7 +73,7 @@ body {
     font-size: 20px;
 }
 
-#header-link a {
+#header-link a:hover {
     background-color: grey;
 }
 
@@ -106,21 +94,14 @@ body {
 }
 
 #welcome-section {
-    display: flex;
-    flex-direction: column;
+    background-color: white;
+    height: 60vh;
     justify-content: center;
+    display: flex;
+    flex-direction: row;
     align-items: center;
-    width: 100%;
-    height: 100vh;
-    background-color: aliceblue;
-    background-image: url('../image/Welcome-image.jpg');
-    background-blend-mode: multiply;
-    background-position: center;
-    /* Center the image */
-    background-repeat: no-repeat;
-    /* Do not repeat the image */
-    background-size: cover;
-    /* Resize the background image to cover the entire container */
+    margin: 0;
+    padding: 0;
 }
 
 #welcome-lable {
@@ -279,7 +260,6 @@ body {
     flex-direction: column;
     margin: 5vh 0;
     padding: 0 30vh 10vh 30vh;
-    ;
 }
 
 #teacher-section h1 {
