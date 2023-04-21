@@ -23,15 +23,15 @@
             </ul>
     </div>
     <div id="main">
-        <form class="form-sign-up" action="">
+        <form class="form-sign-up" action="/html/sign-up" method="post">
             <div class="sign-up__header">
                 <h3 class="sign-up__heading">Tạo tài khoản của bạn</h3>
             </div>
             <div class="sign-up__box">
-                <input type="text" class="sign-up__input" placeholder="Họ và tên">
-                <input type="text" class="sign-up__input" placeholder="Email">
-                <input type="text" class="sign-up__input" placeholder="Số điện thoại">
-                <input type="password" class="sign-up__input" placeholder="Mật khẩu">
+                <input type="text" id="hoten" class="sign-up__input" name="hoten" placeholder="Họ và tên">
+                <input type="text" id="username" class="sign-up__input" name="username" placeholder="Email">
+                <input type="text" id="sdt" class="sign-up__input" placeholder="Số điện thoại">
+                <input type="password" id="password" class="sign-up__input" name="password" placeholder="Mật khẩu">
                 <input type="password" class="sign-up__input" placeholder="Xác nhận mật khẩu">
             </div>
             
@@ -56,6 +56,9 @@
             <div class="sign-up__button">
                 <input type="submit" value="Đăng ký" class="sign-up-button">
             </div>
+            {{ if .Message }}
+                <p>{{ .Message }}</p>
+            {{ end }}
         </form>
     </div>
     <div id="contact">

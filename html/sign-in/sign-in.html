@@ -18,18 +18,18 @@
                     <a href="sign-in.html" class="login-btn" title="Đăng nhập">Đăng nhập</a>
                 </li>
                 <li class="">
-                    <a href="/html/sign_up/sign-up.html" class="login-btn" title="Đăng ký tài khoản">Đăng ký</a>
+                    <a href="/html/sign-up" class="login-btn" title="Đăng ký tài khoản">Đăng ký</a>
                 </li>
             </ul>
     </div>
     <div id="main">
-        <form class="form-sign-in" action="">
+        <form class="form-sign-in" action="/php/signin.php">
             <div class="sign-in__header">
                 <h3 class="sign-in__heading">Đăng nhập vào tài khoản của bạn</h3>
             </div>
             <div class="sign-in__box">
-                <input type="text" class="sign-in__input" placeholder="Tên TK/Email">
-                <input type="password" class="sign-in__input" placeholder="Mật khẩu">
+                <input type="text" class="sign-in__input" placeholder="Tên TK/Email" name="username">
+                <input type="password" class="sign-in__input" placeholder="Mật khẩu" name="password">
             </div>
             
             <div class="sign-in__facebook">

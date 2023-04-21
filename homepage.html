@@ -22,15 +22,34 @@
         </div>
         <ul id="header-link">
             <li><a href="homepage.html">Trang chủ</a></li>
-            <li><a href="html/mainpage/news-page.html">Tin tức</a></li>
-            <li><a href="html/mainpage/courses-page.html">Khoá học</a></li>
+            <li><a href="html/mainpage/news-page">Tin tức</a></li>
+            <li><a href="html/mainpage/courses-page">Khoá học</a></li>
             <li><a href="">Giảng viên</a></li>
             <li><a href="">Thư viện</a></li>
             <li><a href="">Hỗ trợ</a></li>
         </ul>
         <div id="login-button">
-            <a href="/html/sign_in/sign-in.html">Đăng nhập</a>
+            <a href="/html/sign-in">Đăng nhập</a>
         </div>
+        <!-- <script>
+            window.addEventListener('load', function() {
+            const trangChuButton = document.getElementById('trang-chu-button');
+			const tinTucButton = document.getElementById('tin-tuc-button');
+			const khoaHocButton = document.getElementById('khoa-hoc-button');
+
+            trangChuButton.addEventListener('click', function(){
+                history.pushState(null, '', '/trang-chu')
+            });
+
+			tinTucButton.addEventListener('click', function() {
+				history.pushState(null, '', '/tin-tuc');
+			});
+
+			khoaHocButton.addEventListener('click', function() {
+				history.pushState(null, '', '/khoa-hoc');
+			});
+		});
+        </script> -->
     </section>
     <section id="welcome-section">
         <div id="welcome-lable">
