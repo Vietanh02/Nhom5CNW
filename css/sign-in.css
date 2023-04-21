@@ -1,0 +1,150 @@
+* {
+    font-family: sans-serif;
+}
+
+#header {
+    height: 14vh;
+    top: 0;
+    left: 0;
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #c02135;
+    width: 100%;
+    font-size: 25px;
+    text-align: center;
+    align-items: center;
+}
+.logo-head {
+    padding-left: 5px;
+    padding-top: 5px;
+}
+.logo-header {
+    width: auto;
+    height: 85px;
+    object-fit: contain;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+}
+.action-tool {
+    float: right;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+.action-tool li {
+    display: inline;
+    list-style: none;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: black;
+    border-radius: 40px;
+}
+
+.login-btn {
+    color: aliceblue;
+    font-size: 20px;
+}
+
+#main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 65vh;
+}
+
+.sign-in__header {
+    font-size: 24px;
+    height: 10vh;
+}
+
+.form-sign-in {
+    font-size: 14px;
+    width: 555px;
+    height: 100%;
+
+    margin: 0 auto;
+}
+
+.sign-in__input {
+    display: table-cell;
+    position: relative;
+    z-index: 2;
+    width: 70vh;
+    float: top;
+    margin-bottom: 0;
+    height: 26px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    border: 1px solid #9f978e;
+    border-radius: 4px;
+    margin-top: 15px;
+}
+
+.sign-in__facebook {
+    margin-top: 15px;
+    background: #4267b2 no-repeat 10px 12px;
+    font-weight: bold;
+    padding: 12px 20px 12px 20px;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.sign-in__google {
+    margin-top: 15px;
+    background: red no-repeat 10px 12px;
+    font-weight: bold;
+    padding: 12px 20px 12px 20px;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn {
+    color: white;
+}
+
+.logo-btn {
+    float: left;
+}
+
+.sign-in-button {
+    margin-top: 35px;
+    font-size: 14px;
+    font-weight: bold;
+    height: auto;
+    color: white;
+    background: #03a9f4;
+    line-height: 45px;
+    border-radius: 30px;
+    width: 100%;
+    border: none;
+}
+
+.sign-in__forgot {
+    color: #2a70b8;
+    text-decoration: none;
+    outline: none;
+    margin-top: 10px;
+}
+
+#contact {
+    background-color: #eeeeee;
+    height: 10vh;
+    justify-content: center;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 150px
+}
