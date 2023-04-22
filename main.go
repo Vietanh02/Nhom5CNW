@@ -7,6 +7,7 @@ import (
 	"os"
 
 	ShowHTML "news.com/events/src/ShowHTML"
+	"news.com/events/src/SignIn"
 	SignUp "news.com/events/src/SignUp"
 )
 
@@ -25,6 +26,7 @@ func main() {
 
 	ShowHTML.RequestHTTP()
 	SignUp.SignUpHandler()
+	SignIn.SignInHandler()
 
 	http.ListenAndServe(":8080", nil)
 }
