@@ -1,28 +1,47 @@
-html{
+html {
+    scroll-padding-top: 1000px;
     scroll-behavior: smooth;
 }
-body{
+
+body {
+    position: relative;
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
-    /* background-color: black; */
+    scroll-padding-top: 1000px;
 }
-#header-section{
+
+#header-section {
+    /*Opacity start*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter: alpha(opacity=80);
+    -moz-opacity: 0.80;
+    -khtml-opacity: 0.8;
+    opacity: 0.8;
+    /*Opacity end*/
+    margin-top: -8px;
     position: fixed;
+    justify-content: flex-end;
     top: 0;
     left: 0;
     flex-direction: row;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    background-color: rgb(175, 172, 172);
+    background-color: rgba(161, 151, 151, 0.671);
     width: 100%;
     font-size: 25px;
     text-align: center;
     align-items: center;
     box-shadow: 0px 5px 100px rgb(167, 167, 167);
+    height: auto;
 }
-#left-top-header{
+
+/* #header-section :hover{
+    background-color: gray;
+} */
+
+#left-top-header {
     font-family: 'Times New Roman', Times, serif;
     float: right;
     color: black;
@@ -30,14 +49,16 @@ body{
     margin-left: 70px;
     align-items: center;
 }
-#logo-header{
-    /* padding-top: 20px; */
-    padding-right: 20px;
+
+#logo-header {
+    padding-top: 10px;
+    padding-right: 10px;
     width: auto;
     height: 85px;
     object-fit: contain;
 }
-#search-text{
+
+#search-text {
     /* margin: 30px; */
     height: 25px;
     width: 200px;
@@ -45,43 +66,52 @@ body{
     border: 1px solid black;
     padding: 5px 30px 5px 10px;
 }
-#search-button{
+
+#search-button {
     position: relative;
     top: 5px;
     left: 240px;
     width: 20px;
     height: 20px;
 }
-#header-link{
+
+#header-link {
     display: flex;
     padding: auto;
     list-style-type: none;
 }
-#header-link a{
+
+#header-link a {
     color: black;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 40px;
     font-size: 20px;
-}
-#header-link a:hover{
     background-color: grey;
+
 }
-#login-button{
+
+#header-link a:hover {
+    background-color: rgb(73, 73, 73);;
+}
+
+#login-button {
     margin-right: 50px;
-    margin-top: 30px;
-    margin-bottom: 30px;
     font-size: 20px;
 }
-#login-button a{
+
+#login-button a {
+    background-color: gray;
     padding: 10px 20px;
     text-decoration: none;
     color: black;
     border-radius: 40px;
 }
-#login-button a:hover{
-    background-color: gray;
+
+#login-button a:hover {
+    background-color: rgb(73, 73, 73);
 }
+
 
 #mainpage-title{
     background-color: blue;
@@ -164,4 +194,22 @@ body{
     flex-direction: column;
     margin: 0;
     padding: 150px 200px;
+}
+
+.news-top{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 15px;
+}
+.news-top a{
+    text-decoration: none;
+    color: white;
+}
+
+.news-top a:hover{
+    text-decoration: underline;
+}
+
+.news-top p{
+    padding: 0 10px 0 0;
 }

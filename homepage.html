@@ -8,7 +8,6 @@
     <title>Homepage</title>
     <link href="css/homepage.css" rel="stylesheet">
 </head>
-
 <body>
     <section id="header-section">
         <div id="left-top-header">
@@ -24,12 +23,33 @@
         <ul id="header-link">
             <li><a href="homepage.html">Trang chủ</a></li>
             <li><a href="html/mainpage/news-page.html">Tin tức</a></li>
-            <li><a href="">Khoá học</a></li>
+            <li><a href="html/mainpage/courses-page.html">Khoá học</a></li>
             <li><a href="">Giảng viên</a></li>
             <li><a href="">Thư viện</a></li>
             <li><a href="">Hỗ trợ</a></li>
-            <li><a href="/html/sign_in/sign-in.html">Đăng nhập</a></li>
         </ul>
+        <div id="login-button">
+            <a href="/html/sign-in/sign-in.html">Đăng nhập</a>
+        </div>
+        <!-- <script>
+            window.addEventListener('load', function() {
+            const trangChuButton = document.getElementById('trang-chu-button');
+			const tinTucButton = document.getElementById('tin-tuc-button');
+			const khoaHocButton = document.getElementById('khoa-hoc-button');
+
+            trangChuButton.addEventListener('click', function(){
+                history.pushState(null, '', '/trang-chu')
+            });
+
+			tinTucButton.addEventListener('click', function() {
+				history.pushState(null, '', '/tin-tuc');
+			});
+
+			khoaHocButton.addEventListener('click', function() {
+				history.pushState(null, '', '/khoa-hoc');
+			});
+		});
+        </script> -->
     </section>
     <section id="welcome-section">
         <div id="welcome-lable">
@@ -81,7 +101,7 @@
                 <p>Mô tả khoá học</p>
             </a>
         </div>
-        <a href="" id="course-link">Khám phá các khoá học phù hợp với nhu cầu của bạn</a>
+        <a href="html/mainpage/courses-page.html" id="course-link">Khám phá các khoá học phù hợp với nhu cầu của bạn</a>
     </section>
     <section id="news-section">
         <h1>Thông tin mới nhất</h1>

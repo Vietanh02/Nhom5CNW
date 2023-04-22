@@ -18,21 +18,21 @@
                     <a href="sign-in.html" class="login-btn" title="Đăng nhập">Đăng nhập</a>
                 </li>
                 <li class="">
-                    <a href="/html/sign_up/sign-up.html" class="login-btn" title="Đăng ký tài khoản">Đăng ký</a>
+                    <a href="/html/sign-up/sign-up.html" class="login-btn" title="Đăng ký tài khoản">Đăng ký</a>
                 </li>
             </ul>
     </div>
     <div id="main">
-        <form class="form-sign-in" action="">
+        <form class="form-sign-in" action="/html/sign-up" method="post">
             <div class="sign-in__header">
                 <h3 class="sign-in__heading">Đăng nhập vào tài khoản của bạn</h3>
             </div>
             <div class="sign-in__box">
-                <input type="text" class="sign-in__input" placeholder="Tên TK/Email">
-                <input type="password" class="sign-in__input" placeholder="Mật khẩu">
+                <input type="text" class="sign-in__input" placeholder="Tên TK/Email" name="username">
+                <input type="password" class="sign-in__input" placeholder="Mật khẩu" name="password">
             </div>
             
-            <div class="sign-in__facebook">
+            <!-- <div class="sign-in__facebook">
                 <a href="" class="btn">
                     <i class="fa-brands fa-facebook-f logo-btn" style="color: #ffffff;"></i>
                     <div class="social-text">Đăng nhập qua Facebook</div>
@@ -43,7 +43,7 @@
                     <i class="fa-brands fa-google logo-btn" style="color: #ffffff;"></i>
                     <div>Đăng nhập qua Google</div>
                 </a>
-            </div>
+            </div> -->
             <div class="sign-in__button">
                 <input type="submit" value="Đăng nhập" class="sign-in-button">
             </div>
