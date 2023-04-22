@@ -1,9 +1,18 @@
 * {
     font-family: sans-serif;
+    margin: 0;
+}
+ 
+
+body{
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
 }
 
 #header {
-    height: 14vh;
+    height: auto;
     top: 0;
     left: 0;
     flex-direction: row;
@@ -47,21 +56,35 @@ a {
 }
 
 .login-btn {
-    color: aliceblue;
+    /* color: aliceblue; */
     font-size: 20px;
+    padding-right: 20px;
 }
+
+.login-btn a{
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: aliceblue
+}
+
+.login-btn a:hover{
+    background-color: #5f2930;
+}
+
 
 #main {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 65vh;
+    height: auto;
+    flex-direction: column;
 }
 
 .sign-in__header {
     font-size: 24px;
-    height: 10vh;
+    height: auto;
 }
 
 .form-sign-in {
@@ -76,7 +99,7 @@ a {
     display: table-cell;
     position: relative;
     z-index: 2;
-    width: 70vh;
+    width: 90%;
     float: top;
     margin-bottom: 0;
     height: 26px;
@@ -140,7 +163,7 @@ a {
 
 #contact {
     background-color: #eeeeee;
-    height: 10vh;
+    height: 5vh;
     justify-content: center;
     text-align: left;
     display: flex;
