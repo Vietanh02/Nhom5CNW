@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thêm tin tức</title>
+    <link rel="stylesheet" href="/css/addNews.css">
+    <script src="https://cdn.ckeditor.com/ckeditor5/37.0.1/classic/ckeditor.js"></script>
+
+</head>
+<body>
+    <div id="header">
+        <a class="logo-head" title="Trang chủ" href="/homepage.html">
+            <img class="logo-header" src="/image/Hust-logo.jpg" alt="">
+        </a>
+    </div>
+    <section id="main">
+        <div id="left-side-main">
+            <div id="left-side-content">
+                <ul>
+                    <li>Thêm tin tức</li>
+                    <li>Danh sách tin tức</li>
+                </ul>
+            </div>
+        </div>
+        <div id="right-side-main">
+            <form>
+                <div>
+                    <label for="tieu-de">Tiêu đề bài viết</label><br>
+                    <input type="text" id="tieu-de" name="tieu-de" class="text-field-content">
+                </div>
+                <div>
+                    <label for="thoi-gian">Ngày bài viết</label><br>
+                    <input type="text" id="thoi-gian" name="thoi-gian" class="text-field-content">
+                </div>
+                <div>
+                    <label for="mo-ta">Mô tả ngắn</label><br>
+                    <textarea id="mo-ta" name="mo-ta" class="text-field-content" rows="6"></textarea>
+                </div>
+                <div>
+                    <label for="noi-dung">Nội dung bài viết</label>
+                </div>
+                <div id="content">
+                    <div id="editor" name="noi-dung"></div>
+                </div>
+                <button type="submit" id="submit">Đăng tải</button>
+            </form>
+        </div>
+    </section>
+    
+    <footer>
+
+    </footer>
+    <script>
+        ClassicEditor
+            .create( document.querySelector( '#editor' ) )
+            .catch( error => {
+                console.error( error );
+            } );
+    </script>
+</body>
+</html>
