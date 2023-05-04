@@ -11,6 +11,11 @@ body {
     scroll-padding-top: 1000px;
 }
 
+img{
+    width:50%;
+    height: 50%;
+}
+
 #header-section {
     /*Opacity start*/
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";

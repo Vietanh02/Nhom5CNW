@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thêm tin tức</title>
     <link rel="stylesheet" href="/css/adminPage.css">
-    <script src="https://cdn.ckeditor.com/ckeditor5/37.0.1/classic/ckeditor.js"></script>
+    <script src="https://cdn.ckeditor.com/4.16.2/standard/ckeditor.js"></script>
 
 </head>
 <body>
@@ -35,8 +35,8 @@
         <div id="left-side-main">
             <div id="left-side-content">
                 <ul>
-                    <li>Thêm tin tức</li>
-                    <li>Danh sách tin tức</li>
+                    <li><a href="/html/admin/addNews.html">Thêm tin tức</a></li>
+                    <li><a href="/html/admin/listNewsPage.html">Danh sách tin tức</a></li>
                 </ul>
             </div>
         </div>
@@ -51,6 +51,12 @@
                     <input type="text" id="thoi-gian" name="thoi-gian" class="text-field-content">
                 </div>
                 <div>
+                    <label>Hình ảnh</label>
+                </div>
+                <div>
+                    <textarea id="image-title" ></textarea>
+                </div>
+                <div>
                     <label for="mo-ta">Mô tả ngắn</label><br>
                     <textarea id="mo-ta" name="mo-ta" class="text-field-content" rows="6"></textarea>
                 </div>
@@ -58,7 +64,7 @@
                     <label for="noi-dung">Nội dung bài viết</label>
                 </div>
                 <div id="content">
-                    <div id="editor" name="noi-dung"></div>
+                    <textarea id="detail" name="detail"></textarea>
                 </div>
                 <button type="submit" id="submit">Đăng tải</button>
             </form>
@@ -69,11 +75,13 @@
 
     </footer>
     <script>
-        ClassicEditor
-            .create( document.querySelector( '#editor' ) )
-            .catch( error => {
-                console.error( error );
-            } );
+        CKEDITOR.replace("image-title",{
+            toolbar: [{
+                name: 'insert',
+                items: ['Image']
+            }],
+        });
+        CKEDITOR.replace("detail");
     </script>
 </body>
 </html>
