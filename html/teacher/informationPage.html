@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trang thông tin cá nhân</title>
+  <link rel="stylesheet" href="/css/teacherPage.css">
+</head>
+<body>
+    <header id="header">
+        <div>
+            <a class="logo-head" title="Trang chủ" href="/homepage">
+            <img class="logo-header" src="/image/Hust-logo.jpg" alt="">
+            </a>
+        </div>
+        <div>
+            <ul class="action-tool">
+                <li class="btn"><a href="/homepage">Trang chủ</a></li>
+                <li class="btn"><a href="">Quản lý khoá học</a></li>
+                <li class="btn"><a href="/html/teacher/informationPage.html">Thông tin cá nhân</a></li>
+            </ul>
+        </div>
+        <div>
+            <ul class="action-tool">
+                <li class="btn"><a th:href="@{/logout}" title="Đăng xuất">Đăng xuất</a></li>
+            </ul>
+        </div>
+    </header>
+    <section id="main">
+        <div id="left-side-main">
+            <div id="left-side-content">
+                <ul>
+                    <li><a href="/html/admin/addNews.html">Trang cá nhân</a></li>
+                    <li><a href="/html/admin/listNewsPage.html">Chỉnh sửa trang cá nhân</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="right-side-main" class="none-background">
+            
+        </div>
+    </section>
+</body>
+</html>
