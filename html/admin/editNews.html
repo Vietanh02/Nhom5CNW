@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thêm tin tức</title>
+    <link rel="stylesheet" href="/css/adminPage.css">
+    <script src="https://cdn.ckeditor.com/4.16.2/standard/ckeditor.js"></script>
+
+</head>
+<body>
+<header id="header">
+        <div>
+            <a class="logo-head" title="Trang chủ" href="/homepage">
+                <img class="logo-header" src="/image/Hust-logo.jpg" alt="">
+            </a>
+        </div>
+        <div>
+            <ul class="action-tool">
+                <li class="btn"><a href="/homepage">Trang chủ</a></li>
+                <li class="btn"><a href="">Quản lý khoá học</a></li>
+                <li class="btn"><a href="">Quản lý tài khoản</a></li>
+                <li class="btn"><a href="/admin/addNews">Quản lý tin tức</a></li>
+            </ul>
+        </div>
+        <div>
+            <ul class="action-tool">
+                <li class="btn"><a th:href="@{/logout}" title="Đăng xuất">Đăng xuất</a></li>
+            </ul>
+        </div>
+    </header>
+    <section id="main">
+        <div id="left-side-main">
+            <div id="left-side-content">
+                <ul>
+                    <li><a href="/admin/addNews">Thêm tin tức</a></li>
+                    <li><a href="/admin/listNews">Danh sách tin tức</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="right-side-main">
+            <form action="#" th:action="@{/admin/addNews}" th:object="${news}" method="post">
+                <div>
+                    <label for="tieu-de">Tiêu đề bài viết</label><br>
+                    <input type="text" id="tieu-de" name="tieu-de" class="text-field-content" th:field="*{title}">
+                </div>
+                <div>
+                    <label for="thoi-gian">Ngày bài viết</label><br>
+                    <input type="text" id="thoi-gian" name="thoi-gian" class="text-field-content" th:field="*{time}">
+                </div>
+                <div>
+                    <label>Hình ảnh</label>
+                </div>
+                <div>
+                    <textarea id="image-title" th:field="*{imagePage}"></textarea>
+                </div>
+                <div>
+                    <label for="mo-ta">Mô tả ngắn</label><br>
+                    <textarea id="mo-ta" name="mo-ta" class="text-field-content" rows="6" th:field="*{description}"></textarea>
+                </div>
+                <div>
+                    <label>Nội dung bài viết</label>
+                </div>
+                <div id="content">
+                    <textarea id="detail" name="detail" th:field="*{detail}"></textarea>
+                </div>
+                <button type="submit" id="submit">Đăng tải</button>
+            </form>
+        </div>
+    </section>
+    
+    <footer>
+
+    </footer>
+    <script>
+        CKEDITOR.replace("image-title",{
+            toolbar: [{
+                name: 'insert',
+                items: ['Image']
+            }],
+            height: 500,
+        });
+        CKEDITOR.replace('detail', {
+            height: 1000,
+        });
+    </script>
+</body>
+</html>
